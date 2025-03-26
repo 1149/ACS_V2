@@ -351,9 +351,17 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-Calling/dist/
-Server/dist/server.js
+
+# Ignore build artifacts, but allow dist and server.js for deployment
+# Remove the following lines or comment them out:
+# Calling/dist/
+# Calling/build/
+# Server/dist/server.js
+
+# Updated lines to allow deployment:
+!Calling/dist/
+!Calling/build/
+!Server/dist/server.js
 Calling/.vscode
-Calling/build/
 Server/.rush/temp/
 Server/.vscode/
