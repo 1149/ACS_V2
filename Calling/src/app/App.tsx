@@ -58,7 +58,7 @@ const App = (): JSX.Element => {
         setUserCredentialFetchError(true);
       }
     })();
-  }, []);
+  }, [fetchTokenResponse]);
 
   const isMobileSession = useIsMobile();
   const isLandscapeSession = isLandscape();

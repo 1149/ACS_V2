@@ -33,5 +33,4 @@ const handleUserTokenRequest = async (requestedScope?: string): Promise<Communic
  */
 router.get('/', async (req, res, next) => res.send(await handleUserTokenRequest((req.query.scope as string) ?? '')));
 router.post('/', async (req, res, next) => res.send(await handleUserTokenRequest((req.body.scope as string) ?? '')));
-
 export default router;
